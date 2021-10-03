@@ -167,7 +167,7 @@ class HomePage extends StatelessWidget {
               top: 375,
               right: 16,
               //bottom: 30,
-              left: 210,
+              left: 190,
               child: Container(
                 padding: EdgeInsets.only(top: 8),
                 alignment: Alignment.topCenter,
@@ -178,7 +178,11 @@ class HomePage extends StatelessWidget {
                     topRight: Radius.circular(35.0),
                   ),
                 ),
-                child: Icon(Icons.calendar_today_rounded,size: 60,color: Colors.white,),
+                child: Icon(
+                  Icons.calendar_today_rounded,
+                  size: 60,
+                  color: Colors.white,
+                ),
                 height: 150,
               ),
             ),
@@ -186,7 +190,7 @@ class HomePage extends StatelessWidget {
               top: 450,
               right: 16,
               //bottom: 30,
-              left: 210,
+              left: 190,
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -194,13 +198,196 @@ class HomePage extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black38,
-                      //spreadRadius: 2.0,
-                      blurRadius: 2.0,
-                      offset: Offset.fromDirection(1.0)
+                      offset: Offset(4.0, 4.0),
+                      blurRadius: 15,
+                      spreadRadius: 1,
+                    ),
+                    BoxShadow(
+                      color: Colors.black38,
+                      offset: Offset(-4.0, -4.0),
+                      blurRadius: 15,
+                      spreadRadius: 1,
                     ),
                   ],
                 ),
                 height: 230,
+                child: Column(
+                  //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      '18',
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'Requests',
+                      style: TextStyle(
+                        fontSize: 19,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 35,
+                    ),
+                    Text(
+                      'Requests channel',
+                      style: TextStyle(
+                        fontSize: 17,
+                        //fontWeight: FontWeight.normal,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              top: 600,
+              right: 5,
+              left: 300,
+              child: Container(
+                height: 55,
+                width: 50,
+                decoration: BoxDecoration(
+                  color: Color(0xff191A4C),
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    '+14',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 600,
+              right: 33,
+              left: 195,
+              child: Container(
+                height: 55,
+                width: 50,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(
+                        'images/2.png',
+                      ),
+                      fit: BoxFit.scaleDown),
+                  color: Colors.black,
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 600,
+              right: 33,
+              left: 135,
+              child: Container(
+                height: 55,
+                width: 50,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(
+                        'images/1.png',
+                      ),
+                      fit: BoxFit.scaleDown),
+                  color: Colors.amber,
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 600,
+              right: 33,
+              left: 85,
+              child: Container(
+                height: 55,
+                width: 50,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(
+                        'images/3.png',
+                      ),
+                      fit: BoxFit.scaleDown),
+                  color: Colors.blue,
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 375,
+              left: 16,
+              child: Container(
+                height: 160,
+                width: 150,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      offset: Offset(4,4),
+                      blurRadius: 15,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                  color: Color(0xffF07B35),
+                  borderRadius: BorderRadius.circular(28.0),
+                ),
+                child: Icon(Icons.account_balance_outlined,size: 70,color: Colors.white,),
+
+              ),
+            ),
+            Positioned(
+              top: 560,
+              left: 16,
+              child: Container(
+                height: 115,
+                width: 150,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      offset: Offset(4,4),
+                      blurRadius: 15,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                  color: Color(0xff191A4C),
+                  borderRadius: BorderRadius.circular(28.0),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.money,
+                      size: 60,
+                      color: Colors.white,
+                    ),
+                    Text('TopUp',style: TextStyle(color: Colors.white,fontSize: 16),)
+                  ],
+                ),
               ),
             ),
             Positioned(
